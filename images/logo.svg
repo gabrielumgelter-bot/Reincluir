@@ -3,7 +3,7 @@
   <!-- symbol (simplified hands + cane) -->
   <g transform="translate(8,6)" aria-hidden="true">
     <path d="M8 56 q12 -28 28 -34 q4 -2 8 0 q28 10 58 34" fill="#2f8f5a" opacity="0.95"/>
-    <path d="M188 56 q-12 -28 -28 -34 q-4 -2 -8 0 q-28 10 -58 34" fill="#7a8b80" opacity="0.95"/>
+    <path d="M188 56 q-12 -28 -28 -34 q-4 -2 -8 0 q-28 10 -58 34" fill="#7a8b80" opacity="1.95"/>
     <rect x="84" y="14" width="12" height="44" rx="4" fill="#9fcaa1"/>
   </g>
   <text x="110" y="42" font-family="Segoe UI, Roboto, Arial" font-size="22" fill="#2f8f5a" font-weight="700">Reincluir</text>
