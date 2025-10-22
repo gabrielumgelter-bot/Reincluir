@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — Reincluir</title>
+<meta name="description" content="Dashboard administrativo (simulação).">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+<script src="js/charts.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html"><img src="images/logo.svg" alt="Reincluir logo"></a>
+    <nav class="main-nav" aria-label="Menu principal">
+      <ul class="menu-list">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="admin.html" aria-current="page">Dashboard</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Dashboard Administrativo (simulação)</h1>
+  <p class="texto-voluntariado">Métricas e indicadores demonstrativos do impacto.</p>
+  <section class="grid" style="display:grid;grid-template-columns:1fr;gap:12px">
+    <div class="section-card">
+      <canvas id="donationsChart" width="400" height="160" aria-label="Doações"></canvas>
+    </div>
+    <div class="section-card">
+      <canvas id="volunteersChart" width="400" height="160" aria-label="Voluntários"></canvas>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="yearDash"></span> Reincluir</p>
+  </div>
+</footer>
+
+<script src="js/charts.js" defer></script>
+</body>
+</html>

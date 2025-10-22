@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cadastro — Reincluir</title>
+<meta name="description" content="Formulário de cadastro para voluntários e beneficiários.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container" style="display:flex;align-items:center;gap:16px;">
+    <a class="brand" href="index.html"><img src="images/logo.svg" alt="Reincluir logo"></a>
+    <div>
+      <h1 style="margin:0;font-size:1.1rem;color:#2f8f5a">Cadastro Profissional</h1>
+      <p style="margin:0;font-size:0.85rem;color:#666">Preencha com cuidado — seu perfil será apresentado a recrutadores parceiros</p>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="section-card">
+    <h2>Cadastro de Voluntário / Beneficiário</h2>
+    <form id="registrationForm" action="#" method="post" novalidate>
+      <label for="fullName">Nome completo *</label>
+      <input id="fullName" name="fullName" type="text" required minlength="3"/>
+
+      <label for="email">E-mail *</label>
+      <input id="email" name="email" type="email" required/>
+
+      <label for="cpf">CPF *</label>
+      <input id="cpf" name="cpf" type="text" inputmode="numeric" placeholder="000.000.000-00" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" />
+
+      <label for="phone">Telefone *</label>
+      <input id="phone" name="phone" type="tel" inputmode="tel" placeholder="(00) 00000-0000" required/>
+
+      <label for="birthdate">Data de nascimento *</label>
+      <input id="birthdate" name="birthdate" type="date" required max="2007-12-31" />
+
+      <label for="acidente">Acidente de trabalho?</label>
+      <select id="acidente" name="acidente" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+      </select>
+
+      <label for="dataAcidente">Data do acidente (se aplicável)</label>
+      <input id="dataAcidente" name="dataAcidente" type="date" />
+
+      <label for="empresaAnterior">Empresa anterior (se aplicável)</label>
+      <input id="empresaAnterior" name="empresaAnterior" type="text" />
+
+      <label for="habilitacoes">Habilitações / Competências</label>
+      <textarea id="habilitacoes" name="habilitacoes" rows="3"></textarea>
+
+      <label for="cep">CEP *</label>
+      <input id="cep" name="cep" type="text" inputmode="numeric" placeholder="00000-000" required pattern="\d{5}-\d{3}" />
+
+      <div style="margin-top:12px;">
+        <button type="submit" class="btn">Enviar cadastro</button>
+        <button type="reset" class="btn ghost">Limpar</button>
+      </div>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>&copy; <span id="year3"></span> Reincluir</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
